@@ -1,0 +1,88 @@
+.todo-container{
+    width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    button {
+            font-size: 32px;
+            width: 40px;
+            height: 40px;
+        }
+    .todo-add{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        
+        .todo-add-input{
+            outline: none;
+            height: 40px;
+            width: 85%;
+            font-size: inherit;
+            border-radius: 5px;
+            border:  1px solid rgba(0, 0, 0, 0.3);
+            box-sizing: border-box;
+            padding: 5px 10px;
+           
+        }
+        .todo-add-btn{
+            background-color: rgb(21, 199, 169);
+            border-radius: 3px;
+        }
+    }
+    .todo-content{
+        
+        .todo-child {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            overflow: hidden;
+            .todo-item{
+                padding-left: 10px;
+                display: inline-block;
+                width: 70%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .todo-item-edit{
+                    outline: none;
+                    height: 40px;
+                    font-size: inherit;
+                    width: 320px;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    box-sizing: border-box;
+                    padding: 5px 10px;
+            }
+            .todo-action{
+                .todo-edit{
+                    &:hover {
+                        background-color: rgba(0, 164, 240, 0.5);
+                    }
+                }
+                .todo-delete {
+                    &:hover {
+                            background-color: rgba(255, 0, 0, 1);
+                        }
+                }
+            }
+    }
+        .todo-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .todo-delete-all{
+                width: unset;
+                padding: 0 10px;
+                background-color: rgb(21, 199, 169);
+                font-size: calc(10px + 1vmin);
+                border-radius: 3px;
+            }
+        }
+    }
+}
